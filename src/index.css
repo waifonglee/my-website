@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Sudo';
 
-  src: local('Sudo'), url(./fonts/sudo/Sudo-Medium.ttf) format('truetype');
+  src: local('Sudo'), url(./fonts/sudo/Sudo-Regular.ttf) format('truetype');
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
