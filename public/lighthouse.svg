@@ -1,0 +1,30 @@
+<svg width="156" height="424" viewBox="0 0 156 424" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="69" y="36" width="17" height="18" rx="7" fill="#F7F7EB"/>
+<path d="M33 81H123V106H33V81Z" fill="#EDEDFE"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M93 81H33V106H123V105.5H93V81Z" fill="#E4E4FF"/>
+<path d="M33 41H43V90H33V41Z" fill="#EDEDFE"/>
+<path d="M123 41H113V90H123V41Z" fill="#EDEDFE"/>
+<path d="M21.5 82.5V105.5" stroke="#5E5E86" stroke-width="2"/>
+<path d="M77.3766 23.2045C77.7816 23.0716 78.2184 23.0716 78.6234 23.2045L123.268 37.8496C125.429 38.5585 124.919 41.75 122.644 41.75H33.3556C31.0813 41.75 30.5712 38.5585 32.7322 37.8496L77.3766 23.2045Z" fill="#EDEDFE"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M78.6234 23.2045C78.2184 23.0716 77.7816 23.0716 77.3766 23.2045L32.7322 37.8496C30.5712 38.5585 31.0813 41.75 33.3556 41.75H93V27.9206L78.6234 23.2045Z" fill="#E4E4FF"/>
+<rect x="74" y="15" width="8" height="10" fill="#E4E4FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M79.5 15H74V25H76.5L79.5 15Z" fill="#D7D7FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M77 23.5L72 41.75H33.3556C31.0813 41.75 30.5712 38.5585 32.7322 37.8496L77 23.328V23.5Z" fill="#D7D7FF"/>
+<path d="M65.5 123.5H30.5L33 105.5V81V41.75L43 41.5V41.75V81H68L65.5 123.5Z" fill="#D7D7FF"/>
+<path d="M34.5 82.5V105.5" stroke="#5E5E86" stroke-width="2"/>
+<path d="M59.5 82.5V105.5" stroke="#5E5E86" stroke-width="2"/>
+<path d="M95.5 82.5V105.5" stroke="#5E5E86" stroke-width="2"/>
+<path d="M121.5 82.5V105.5" stroke="#5E5E86" stroke-width="2"/>
+<path d="M134.5 82.5V105.5" stroke="#42425E" stroke-width="2"/>
+<line x1="21" y1="90.5" x2="135" y2="90.5" stroke="#5E5E86"/>
+<line x1="21" y1="99.5" x2="135" y2="99.5" stroke="#5E5E86"/>
+<path d="M78 0L78.866 15H77.134L78 0Z" fill="#D7D7FF"/>
+<path d="M20.5 82.5H135.5" stroke="#5E5E86"/>
+<path d="M125.5 123.5H30.5L0.5 423.5H155.5L125.5 123.5Z" fill="#EDEDFE"/>
+<path d="M93 123.5H65.5L35.5 423H104L93 123.5Z" fill="#E4E4FF"/>
+<path d="M65.5 123.5H30.5L0.5 423H35.5L65.5 123.5Z" fill="#D7D7FF"/>
+<rect x="96" y="353" width="23" height="34" rx="7" fill="#42425E"/>
+<rect x="96" y="144" width="23" height="34" rx="7" fill="#42425E"/>
+<rect x="96" y="246" width="23" height="34" rx="7" fill="#42425E"/>
+<path d="M126.5 123.5H29.5L20.5 105.5H135.5L126.5 123.5Z" fill="#5E5E86"/>
+</svg>

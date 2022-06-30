@@ -1,11 +1,12 @@
 import { Flex, VStack, Text } from "@chakra-ui/react";
-import Header from "./components/Header";
-import NavBar from "./components/NavBar";
+import Landing from "./components/Landing";
+import About from "./components/About";
 
 function App() {
   return (
     <VStack>
-      <Header></Header>  
+      <Landing/>
+      <About />
     </VStack>
   );
 }
