@@ -44,23 +44,32 @@ const Landing = () => {
 
     return (
         <Box w='100vw' h='100vh' bgGradient="linear(to-b, #020111 10%,#3a3a52 100%)" position='relative' onMouseMove={handleParallaxMouseMove}>
-            <MotionDiv animate={{ opacity: [0, 1] }} transition={{ delay: 2, duration: 0.7 }}>
-                <MotionDiv animate={starsAnimationProp.animateOne} transition={starsAnimationProp.transition}>
-                    <Image src='stars1.png' position='absolute' h='100vh' w='100vw' />
+            <MotionDiv animate={{ opacity: [0, 1] }} transition={{ delay: 2, duration: 0.7 }} position='absolute' h='100%' w='100%'>
+                <MotionDiv animate={starsAnimationProp.animateOne} transition={starsAnimationProp.transition} position='absolute' h='100%' w='100%'>
+                    <Image src='stars1.png' position='absolute' h='100%' w='100%' />
                 </MotionDiv>
 
-                <MotionDiv animate={starsAnimationProp.animateTwo} transition={starsAnimationProp.transition}>
-                    <Image src='stars2.png' position='absolute' h='100vh' w='100vw' />
+                <MotionDiv animate={starsAnimationProp.animateTwo} transition={starsAnimationProp.transition} position='absolute' h='100%' w='100%'>
+                    <Image src='stars2.png' position='absolute' h='100%' w='100%' />
                 </MotionDiv>
 
-                <MotionDiv animate={parallaxControls}>
+                <MotionDiv animate={parallaxControls} position='absolute' h='100%' w='100%'>
                     <Image src='moon.svg' position='absolute' right='3vw' top='2vh' h={['120px', '160px', '200px', '240px', '280px']} />
+                    <Image src='lighthouse.svg' position='absolute' left='0' bottom='0' h={['350px', '500px']} />
                 </MotionDiv>
-
-                <Image src='lighthouse.svg' position='absolute' left='0' bottom='0' h={['350px', '500px']} />
             </MotionDiv>
 
-            <Heading />
+            <Center w='100%' h='100%' position='absolute' display='flex' flexDirection='column' >
+                <TextAnimation text='Wai Fong Lee' color='pink.100' fontSize={['30px', '50px', '60px', '70px', '80px']} />
+                <MotionHeading
+                    animate={{ opacity: [0, 1] }} transition={{ delay: 1.8, duration: 0.2 }}
+                    color='white'
+                    fontSize={['15px', '25px', '30px', '35px', '40px']}
+                >
+                    Software developer
+                </MotionHeading>
+
+            </Center>
 
         </Box>
 
@@ -68,16 +77,13 @@ const Landing = () => {
 }
 
 
-const Heading = () => {
-    const title = 'Wai Fong Lee'
-    const subtitle = 'software engineer'
-
+const TextAnimation = (props) => {
     const textAnimationProp = {
         hidden: { opacity: 1 },
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.15
+                staggerChildren: props.speed ? props.speed : 0.15
             }
         }
     }
@@ -98,26 +104,15 @@ const Heading = () => {
     )
 
     return (
-        <Center w='100%' h='100%' position='absolute' display='flex' flexDirection='column' >
             <MotionHeading
                 variants={textAnimationProp}
                 animate="visible"
                 initial="hidden"
-                color='pink.200'
-                fontSize={['30px', '50px', '60px', '70px', '80px']}
+                {...(props.color) && {color: props.color}}
+                {...(props.fontSize) && {fontSize: props.fontSize}}
             >
-                {mapLetterAnimation(title)}
+                {mapLetterAnimation(props.text)}
             </MotionHeading>
-
-            <MotionHeading
-                animate={{ opacity: [0, 1] }} transition={{ delay: 1.8, duration: 0.2 }}
-                color='white'
-                fontSize={['15px', '25px', '30px', '35px', '40px']}
-            >
-                {subtitle}
-            </MotionHeading>
-            
-        </Center>
     )
 }
 

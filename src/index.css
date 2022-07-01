@@ -1,4 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url(//fonts.googleapis.com/css?family=Lora);
+
+
 
 
 @font-face {
@@ -10,7 +13,7 @@
 }
 
 * {
-  font-family: 'Share Tech Mono';
+  font-family: 'Sudo';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
