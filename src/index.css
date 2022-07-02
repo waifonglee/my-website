@@ -1,5 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Share+Tech+Mono);
-@import url(//fonts.googleapis.com/css?family=Lora);
+@import url(//fonts.googleapis.com/css?family=Oxygen);
+@import url(//fonts.googleapis.com/css?family=Finlandica);
+@import url(//fonts.googleapis.com/css?family=Ubuntu);
 
 
 
@@ -12,11 +14,35 @@
                             'embedded-opentype', and 'svg' */
 }
 
-* {
-  font-family: 'Sudo';
+
+html {
+  font-size: 62.5%;
+}
+
+.landing-title {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.section-title {
+  font-family: 'Sudo', monospace;
+  color:#3a3a52;
+  margin: 1rem;
+}
+
+.section-text {
+  font-family: 'Sudo', monospace;
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+
+
+/*
+{
+  font-family: 'Sudo', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*/
 
 
 

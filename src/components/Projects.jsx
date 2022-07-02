@@ -3,8 +3,8 @@ import { Box, Center, Flex, Text, VStack, LinkBox, LinkOverlay} from "@chakra-ui
 const Projects = () => {
     return (
         <VStack>
-            <Text fontSize={['30px', '50px', '60px', '70px', '80px']} color='black' margin='1em'> 02. Projects </Text>
-            <Flex flexDirection={['column', 'row']}>
+            <Text className='section-title' fontSize={['3.5rem', '4rem']}> 02. Projects </Text>
+            <Flex flexDirection={['column', 'column', 'row']}>
                 <LinkBox w='sm' p='5' borderWidth='1px' rounded='md'>
                     <Center flexDirection='column'>
                         <Text fontWeight='bold'>

@@ -1,12 +1,6 @@
 import { Box, Image, chakra, Center } from "@chakra-ui/react"
 import { useAnimation, isValidMotionProp, motion } from 'framer-motion'
 
-
-
-const MotionHeading = chakra(motion.h1, {
-    shouldForwardProp: (prop) => isValidMotionProp(prop) || prop === 'children',
-})
-
 const MotionDiv = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || prop === 'children',
 })
@@ -53,21 +47,22 @@ const Landing = () => {
                     <Image src='stars2.png' position='absolute' h='100%' w='100%' />
                 </MotionDiv>
 
-                <MotionDiv animate={parallaxControls} position='absolute' h='100%' w='100%'>
-                    <Image src='moon.svg' position='absolute' right='3vw' top='2vh' h={['120px', '160px', '200px', '240px', '280px']} />
-                    <Image src='lighthouse.svg' position='absolute' left='0' bottom='0' h={['350px', '500px']} />
+                <MotionDiv animate={parallaxControls} position='absolute' h='100%' w='100%'>   
+                    <Image src='moon.svg' position='absolute' right='0' top='0' margin='1rem' h={['150px', '200px']} maxH='30%'/>
                 </MotionDiv>
+                <Image src='lighthouse.svg' position='absolute' left='0' bottom='0' h={['350px', '450px', '500px']} maxH='45%'/>
             </MotionDiv>
 
             <Center w='100%' h='100%' position='absolute' display='flex' flexDirection='column' >
-                <TextAnimation text='Wai Fong Lee' color='pink.100' fontSize={['30px', '50px', '60px', '70px', '80px']} />
-                <MotionHeading
+                <TextAnimation className='landing-title' text='Wai Fong Lee' color='pink' fontSize={['2.5rem', '3.5rem']} />
+                <MotionDiv
                     animate={{ opacity: [0, 1] }} transition={{ delay: 1.8, duration: 0.2 }}
+                    className='landing-title'
                     color='white'
-                    fontSize={['15px', '25px', '30px', '35px', '40px']}
+                    fontSize={['1.6rem','2rem']}
                 >
                     Software developer
-                </MotionHeading>
+                </MotionDiv>
 
             </Center>
 
@@ -95,24 +90,25 @@ const TextAnimation = (props) => {
         }
     }
 
-    const mapLetterAnimation = (text) => (
-        text.split("").map((c, ind) => (
+    const mapLetterAnimation = (content) => (
+        content.split("").map((c, ind) => (
             <MotionSpan key={c + ind} variants={letterAnimationProp}>
                 {c}
             </MotionSpan>
         ))
     )
+    
+    const {text, speed, ...newProps} = props;
 
     return (
-            <MotionHeading
+            <MotionDiv
                 variants={textAnimationProp}
                 animate="visible"
                 initial="hidden"
-                {...(props.color) && {color: props.color}}
-                {...(props.fontSize) && {fontSize: props.fontSize}}
+                {...newProps}
             >
-                {mapLetterAnimation(props.text)}
-            </MotionHeading>
+                {mapLetterAnimation(text)}
+            </MotionDiv>
     )
 }
 
