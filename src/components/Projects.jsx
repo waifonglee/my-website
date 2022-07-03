@@ -9,7 +9,6 @@ const Projects = () => {
             <Center className='section-content-wrapper' flexWrap='wrap' gap='1em' maxWidth='80em'>
                 <Project title='this page' desc='Portfolio' stack='React' link='https://github.com/waifonglee/my-website' />
                 <Project title='theme bot' desc='Discord bot that curates and plays a music playlist based on your theme' stack='Go' link='' />
-
             </Center>
         </VStack>
     )
@@ -22,7 +21,7 @@ const Project = (props) => {
     const { title, desc, stack, link } = props
     return (
         <MotionDiv w={isLargerThan38em ? '35em' : '100%'} h='35em' borderWidth='1px' whileHover={{ borderColor: '#553C9A' }}>
-            <LinkBox h='100%' w='100%' pt='5' pl='5' pr='5' >
+            <LinkBox h='100%' w='100%' p='5'>
                 <Flex flexDirection='column' h='100%' w='100%'>
                     <Center h='15em' w='100%' bgColor='purple.50' >
                         <Text className='section-text section-text-title' textAlign='center'>
