@@ -1,22 +1,13 @@
 @import url(//fonts.googleapis.com/css?family=Share+Tech+Mono);
-@import url(//fonts.googleapis.com/css?family=Oxygen);
-@import url(//fonts.googleapis.com/css?family=Finlandica);
-@import url(//fonts.googleapis.com/css?family=Ubuntu);
-
-
-
 
 @font-face {
   font-family: 'Sudo';
-
   src: local('Sudo'), url(./fonts/sudo/Sudo-Regular.ttf) format('truetype');
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
 }
-
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 .landing-title {
@@ -25,26 +16,31 @@ html {
 
 .section-title {
   font-family: 'Sudo', monospace;
-  color:#3a3a52;
+  color: #3a3a52;
   margin: 1rem;
+  font-size: 3.5rem;
 }
 
 .section-text {
   font-family: 'Sudo', monospace;
   font-size: 1.8rem;
   margin: 1rem;
+  color: grey;
 }
 
-
-/*
-{
-  font-family: 'Sudo', monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.section-text-title {
+  font-size:2rem;
+  color: black;
 }
-*/
 
+.section-wrapper {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
 
-
-
-
+.section-content-wrapper {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}

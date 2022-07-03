@@ -1,17 +1,18 @@
-import { VStack, Box, Flex } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
 import Landing from "./components/Landing";
 import About from "./components/About";
+import Footer from "./components/footer";
 import Projects from "./components/Projects";
 
 function App() {
   return (
-    <VStack overflowX='hidden'>
+    <VStack>
       <Landing/>
-      <Flex w={['100%', '100%', '80%', '70%']} maxW='1200px' flexDirection='column' gap='3rem'>
+      <VStack w={['100%', '100%', '80%', '70%']} maxW='1200px' gap='3em' >
         <About />
         <Projects/>
-      </Flex>
-      
+        <Footer/>
+      </VStack>
     </VStack>
   );
 }

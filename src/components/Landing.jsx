@@ -1,13 +1,6 @@
-import { Box, Image, chakra, Center } from "@chakra-ui/react"
-import { useAnimation, isValidMotionProp, motion } from 'framer-motion'
-
-const MotionDiv = chakra(motion.div, {
-    shouldForwardProp: (prop) => isValidMotionProp(prop) || prop === 'children',
-})
-
-const MotionSpan = chakra(motion.span, {
-    shouldForwardProp: (prop) => isValidMotionProp(prop) || prop === 'children',
-})
+import { Box, Image, Center } from "@chakra-ui/react"
+import { useAnimation } from 'framer-motion'
+import { MotionDiv, MotionSpan } from "./helper"
 
 const Landing = () => {
     const parallaxControls = useAnimation()
