@@ -12,7 +12,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setHeaderLoaded(true)
-    }, 2500)
+    }, 3000)
   })
 
   return (
