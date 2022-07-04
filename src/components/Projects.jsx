@@ -7,7 +7,7 @@ const Projects = () => {
         <VStack className='section-wrapper'>
             <Text className='section-title' > 02. Projects </Text>
             <Center className='section-content-wrapper' flexWrap='wrap' gap='1em' maxWidth='80em'>
-                <Project title='this page' desc='Portfolio' stack='React' link='https://github.com/waifonglee/my-website' />
+                <Project title='waifonglee.github.io' desc='Portfolio' stack='React' link='https://github.com/waifonglee/my-website' />
                 <Project title='theme bot' desc='Discord bot that curates and plays a music playlist based on your theme' stack='Go' link='' />
             </Center>
         </VStack>
