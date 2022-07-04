@@ -1,4 +1,4 @@
-import { Box, Image, Center, Text } from "@chakra-ui/react"
+import { Box, Image, Center } from "@chakra-ui/react"
 import { useAnimation } from 'framer-motion'
 import { MotionDiv, MotionSpan } from "./helper"
 
@@ -40,23 +40,15 @@ const Landing = () => {
                     <Image src='stars2.png' position='absolute' h='100%' w='100%' />
                 </MotionDiv>
 
-                <MotionDiv animate={parallaxControls} position='absolute' h='100%' w='100%'>   
-                    <Image src='moon.svg' position='absolute' right='0' top='0' margin='1rem' h={['150px', '200px']} maxH='30%'/>
+                <MotionDiv animate={parallaxControls} position='absolute' h='100%' w='100%'>
+                    <Image src='moon2.svg' position='absolute' right='0' top='0' m='2em' h={['200px', '250px']} maxH='50%' />
+                    <Image src='lighthouse.svg' position='absolute' left='0' bottom='0' h={['350px', '450px', '500px']} maxH='45%' />
                 </MotionDiv>
-                <Image src='lighthouse.svg' position='absolute' left='0' bottom='0' h={['350px', '450px', '500px']} maxH='45%'/>
             </MotionDiv>
 
             <Center w='100%' h='100%' position='absolute' display='flex' flexDirection='column' >
-                <TextAnimation className='landing-title' text='Wai Fong Lee' color='pink' fontSize={['2.5rem', '3.5rem']} />
-                <MotionDiv
-                    animate={{ opacity: [0, 1] }} transition={{ delay: 1.8, duration: 0.2 }}
-                    className='landing-title'
-                    color='white'
-                    fontSize={['1.6rem','2rem']}
-                >
-                    Software developer
-                </MotionDiv>
-
+                <TextAnimation className='landing-title' text='Wai Fong Lee' color='pink' fontSize='3.5em' />
+                <TextAnimation className='landing-title' text='Software engineer' color='white' fontSize='2em' stagger='0.1' />
             </Center>
         </Box>
 
@@ -70,7 +62,7 @@ const TextAnimation = (props) => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: props.speed ? props.speed : 0.15
+                staggerChildren: props.stagger ? parseFloat(props.stagger) : 0.15
             }
         }
     }
@@ -89,18 +81,18 @@ const TextAnimation = (props) => {
             </MotionSpan>
         ))
     )
-    
-    const {text, speed, ...newProps} = props;
+
+    const { text, speed, ...newProps } = props;
 
     return (
-            <MotionDiv
-                variants={textAnimationProp}
-                animate="visible"
-                initial="hidden"
-                {...newProps}
-            >
-                {mapLetterAnimation(text)}
-            </MotionDiv>
+        <MotionDiv
+            variants={textAnimationProp}
+            animate="visible"
+            initial="hidden"
+            {...newProps}
+        >
+            {mapLetterAnimation(text)}
+        </MotionDiv>
     )
 }
 
