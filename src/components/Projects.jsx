@@ -35,7 +35,7 @@ const Project = (props) => {
 
                         <Text className='section-text' my='1em' textAlign={'center'}>
                             Built with {stack} <br />
-                            <LinkOverlay href={link}>
+                            <LinkOverlay href={link} isExternal>
                                 github<ExternalLinkIcon ml='1' mb='0.5' w='1.4rem' />
                             </LinkOverlay>
                         </Text>

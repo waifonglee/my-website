@@ -26,7 +26,7 @@ const About = () => {
                 <Text className='section-text'>
                     Connect with me! I'm open to chatting about anything under the sun
                     <br />
-                    <Link color='#553C9A' href='www.linkedin.com/in/lee-wai-fong'>
+                    <Link color='#553C9A' href='https://www.linkedin.com/in/lee-wai-fong' isExternal>
                         LinkedIn
                     </Link>
                 </Text>
