@@ -42,8 +42,8 @@ const Landing = () => {
 
                 <MotionDiv animate={parallaxControls} position='absolute' h='100%' w='100%'>
                     <Image src='moon.svg' position='absolute' right='0' top='0' m='2em' h={['200px', '250px']} maxH='50%' />
-                    <Image src='lighthouse.svg' position='absolute' left='0' bottom='0' h={['350px', '450px', '500px']} maxH='45%' />
                 </MotionDiv>
+                <Image src='lighthouse.svg' position='absolute' left='0' bottom='0' h={['350px', '450px', '500px']} maxH='45%' />
             </MotionDiv>
 
             <Center w='100%' h='100%' position='absolute' display='flex' flexDirection='column' >

@@ -18,13 +18,13 @@ const About = () => {
                 </Text>
 
                 <Text className='section-text'>
-                    Outside of work, I'm obsessed with bunnies, dogs, korean food, anime and mystery shows.
-                    <br />
-                    (I also spend way too much time on Reddit and Twitter)
+                    Outside of work, I'm obsessed with animal videos.
+                    <br/>
+                    (I also spend way too much time on Tiktok)
                 </Text>
 
                 <Text className='section-text'>
-                    Connect with me! I'm open to chatting about anything under the sun :)
+                    Connect with me! I'm open to chatting about anything under the sun
                     <br />
                     <Link color='#553C9A' href='www.linkedin.com/in/lee-wai-fong'>
                         LinkedIn
