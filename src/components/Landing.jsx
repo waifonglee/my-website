@@ -29,6 +29,7 @@ const Landing = () => {
     }
 
 
+
     return (
         <Box w='100vw' h='100vh' bgGradient="linear(to-b, #020111 10%,#3a3a52 100%)" position='relative' onMouseMove={handleParallaxMouseMove}>
             <MotionDiv animate={{ opacity: [0, 1] }} transition={{ delay: 2, duration: 0.7 }} position='absolute' h='100%' w='100%'>

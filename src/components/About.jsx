@@ -4,6 +4,7 @@ const About = () => {
     return (
         <VStack className='section-wrapper'>
             <Text className='section-title'> 01. About </Text>
+
             <Box className='section-content-wrapper' maxWidth='60em'>
                 <Center>
                     <Image src='photo.png' w='100%' maxWidth='40em' />
@@ -19,7 +20,7 @@ const About = () => {
 
                 <Text className='section-text'>
                     Outside of work, I'm obsessed with animal videos.
-                    <br/>
+                    <br />
                     (I also spend way too much time on Tiktok)
                 </Text>
 

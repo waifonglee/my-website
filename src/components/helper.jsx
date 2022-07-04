@@ -8,7 +8,8 @@ const MotionDiv = chakra(motion.div, {
 const MotionSpan = chakra(motion.span, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || prop === 'children',
 })
+
 export {
     MotionDiv,
-    MotionSpan
+    MotionSpan,
 }
