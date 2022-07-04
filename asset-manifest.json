@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4c628efa.css",
+    "main.js": "/static/js/main.b5122302.js",
+    "static/media/Sudo-Regular.ttf": "/static/media/Sudo-Regular.5a28e613acc7cfa04e66.ttf",
+    "index.html": "/index.html",
+    "main.4c628efa.css.map": "/static/css/main.4c628efa.css.map",
+    "main.b5122302.js.map": "/static/js/main.b5122302.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c628efa.css",
+    "static/js/main.b5122302.js"
+  ]
+}
